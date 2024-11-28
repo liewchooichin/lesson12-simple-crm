@@ -57,6 +57,7 @@ public class CustomerServiceImpl
   }
 
   // nested route
+  // create
   @Override
   public Interaction addInteractionToCustomer(Long id, Interaction interaction){
     // get the customer first
@@ -66,4 +67,14 @@ public class CustomerServiceImpl
     // save interaction to db
     return interactionRepository.save(interaction);
   }
+  // get all interactions by one customer
+  /* 
+  @Override
+  public ArrayList<Interaction> getInteractionsOfACustomer(Long id){
+    // get the customer first
+    Customer selectedCustomer = customerRepository.findById(id).get();
+    // get the interaction of the customer
+    Interaction selectedInteraction = 
+  }
+  */
 } // end of class

@@ -10,4 +10,5 @@ public interface CustomerService {
   void deleteCustomer(Long id);
   // nested route
   Interaction addInteractionToCustomer(Long id, Interaction interaction);
+  ArrayList<Interaction> getInteractionsOfACustomer(Long id);
 }
